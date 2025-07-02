@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rasa Nusantara - Resep</title>
+    <link rel="stylesheet" href="../css/resep.css" />
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="logo">Rasa Nusantara</div>
+            <ul class="nav-link">
+            <li><a href="../index.html">Beranda</a></li>
+            <li><a href="resep.html">Resep</a></li>
+            <li><a href="#cerita">Cerita</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="main-container">
+            <h2>Resep Kuliner Tradisional</h2>
+            <div class="filter-tab">
+                <button class="tab active" data-category="all">Semua</button>
+                <button class="tab" data-category="main">Hidangan Utama</button>
+                <button class="tab" data-category="side">Hidangan Pendamping</button>
+                <button class="tab" data-category="snack">Camilan</button>
+                <button class="tab" data-category="drink">Minuman</button>
+            </div>
+            <div class="resep-grid">
+                <div class="resep-card" data-category="main" onclick="openModal('rendang')">
+                    <div class="resep-image">
+                        <img src="../image/rendang.jpg" alt="" />
+                    </div>
+                    <div class="resep-content">
+                        <h3>Rendang Padang</h3>
+                        <p>Masakan daging sapi yang dimasak dengan bumbu rempah-rempah khas Minangkabau</p>
+                        <div class="resep-meta">
+                            <span>⏱️ 4 jam</span>
+                            <span class="rating">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <button class="view-resep-btn">Lihat Resep</button>
+                </div>
+
+                <div class="resep-card" data-category="main" onclick="openModal('gudeg')">
+                    <div class="resep-image">
+                        <img src="../image/gudeg.jpg" alt="" />
+                    </div>
+                    <div class="resep-content">
+                        <h3>Gudeg Yogyakarta</h3>
+                        <p>Makanan tradisional dari nangka muda yang dimasak dengan santan dan gula kelapa</p>
+                        <div class="resep-meta">
+                            <span>⏱️ 6 jam</span>
+                            <span class="rating">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <button class="view-resep-btn">Lihat Resep</button>
+                </div>
+
+                <div class="resep-card" data-category="side" onclick="openModal('pempek')">
+                    <div class="resep-image">
+                        <img src="../image/pempek.jpg" alt="" />
+                    </div>
+                    <div class="resep-content">
+                        <h3>Pempek Palembang</h3>
+                        <p>
+                            Makanan khas Palembang berbahan ikan dan sagu yang disajikan
+                            dengan kuah cuko
+                        </p>
+                        <div class="resep-meta">
+                            <span>⏱️ 2 jam</span>
+                            <span class="rating">⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <button class="view-resep-btn">Lihat Resep</button>
+                </div>
+
+                <div class="resep-card" data-category="side" onclick="openModal('soto')">
+                    <div class="resep-image">
+                        <img src="../image/sotobetawi.jpg" alt="" />
+                    </div>
+                    <div class="resep-content">
+                        <h3>Soto Betawi</h3>
+                        <p>
+                            Sup tradisional Jakarta dengan kuah santan, daging sapi, dan
+                            sayuran segar
+                        </p>
+                        <div class="resep-meta">
+                            <span>⏱️ 3 jam</span>
+                            <span class="rating">⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <button class="view-resep-btn">Lihat Resep</button>
+                </div>
+
+                <div class="resep-card" data-category="snack" onclick="openModal('gado')">
+                    <div class="resep-image">
+                        <img src="../image/gado2.jpg" alt="" />
+                    </div>
+                    <div class="resep-content">
+                        <h3>Gado-Gado Jakarta</h3>
+                        <p>
+                            Salad Indonesia dengan sayuran rebus dan bumbu kacang yang lezat
+                        </p>
+                        <div class="resep-meta">
+                            <span>⏱️ 45 menit</span>
+                            <span class="rating">⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <button class="view-resep-btn">Lihat Resep</button>
+                </div>
+
+                <div class="resep-card" data-category="main" onclick="openModal('nasi')">
+                    <div class="resep-image">
+                        <img src="../image/nasiliwet.jpg" alt="" />
+                    </div>
+                    <div class="resep-content">
+                        <h3>Nasi Liwet Solo</h3>
+                        <p>
+                            Nasi gurih khas Solo yang dimasak dengan santan dan
+                            rempah-rempah
+                        </p>
+                        <div class="resep-meta">
+                            <span>⏱️ 1.5 jam</span>
+                            <span class="rating">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <button class="view-resep-btn">Lihat Resep</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="second-view"  id="resepModal">
+            <div class="modal-overlay" onclick="closeModal()"></div> <!-- klik di luar -->
+            <button class="close-modal" onclick="closeModal()">✖</button>
+            <div class="modal-content" id="modalContent">            
+                <div class="resep-detail" id="rendang">
+                    <h1 class="resep-detail-title">Rendang</h1>
+                    <p class="resep-detail-subtitle">Masakan khas Minangkabau yang kaya rasa dan rempah</p>
+                    <div class="resep-detail-image">
+                        <img src="../image/rendang.jpg" alt="Rendang" />
+                    </div>
+                    <div class="resep-detail-content">
+                        <h2>Bahan-bahan:</h2>
+                        <ul>
+                            <li>1 kg daging sapi, potong kotak</li>
+                            <li>1 liter santan dari 2 butir kelapa</li>
+                            <li>5 lembar daun jeruk</li>
+                            <li>2 batang serai, memarkan</li>
+                            <li>2 lembar daun kunyit (opsional)</li>
+                            <li>Garam, gula secukupnya</li>
+                        </ul>
+                        <h2>Bumbu Halus:</h2>
+                        <ul>
+                            <li>10 siung bawang merah</li>
+                            <li>6 siung bawang putih</li>
+                            <li>10 cabai merah besar</li>
+                            <li>3 cm jahe</li>
+                            <li>4 cm lengkuas</li>
+                            <li>2 cm kunyit</li>
+                            <li>1 sdt ketumbar sangrai</li>
+                        </ul>
+                        <h2>Cara Memasak:</h2>
+                        <ol>
+                            <li>Haluskan semua bumbu halus, lalu tumis hingga harum.</li>
+                            <li>Masukkan daun jeruk, serai, dan daun kunyit.</li>
+                            <li>Tambahkan daging sapi, aduk rata hingga berubah warna.</li>
+                            <li>Tuangkan santan, masak dengan api kecil sambil terus diaduk.</li>
+                            <li>Masak hingga kuah menyusut dan rendang mengering sesuaiselera.</li>
+                            <li>Sajikan hangat dengan nasi putih.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="resep-detail" id="gudeg">
+                    <h1 class="resep-detail-title">gudeg Yogyakarta</h1>
+                    <p class="resep-detail-subtitle">Masakan khas Yogyakarta yang kaya rasa dan rempah</p>
+                    <div class="resep-detail-image">
+                        <img src="../image/gudeg.jpg" alt="Rendang" />
+                    </div>
+                    <div class="resep-detail-content">
+                        <h2>Bahan-bahan:</h2>
+                        <ul>
+                            <li>1 kg daging sapi, potong kotak</li>
+                            <li>1 liter santan dari 2 butir kelapa</li>
+                            <li>5 lembar daun jeruk</li>
+                            <li>2 batang serai, memarkan</li>
+                            <li>2 lembar daun kunyit (opsional)</li>
+                            <li>Garam, gula secukupnya</li>
+                        </ul>
+                        <h2>Bumbu Halus:</h2>
+                        <ul>
+                            <li>10 siung bawang merah</li>
+                            <li>6 siung bawang putih</li>
+                            <li>10 cabai merah besar</li>
+                            <li>3 cm jahe</li>
+                            <li>4 cm lengkuas</li>
+                            <li>2 cm kunyit</li>
+                            <li>1 sdt ketumbar sangrai</li>
+                        </ul>
+                        <h2>Cara Memasak:</h2>
+                        <ol>
+                            <li>Haluskan semua bumbu halus, lalu tumis hingga harum.</li>
+                            <li>Masukkan daun jeruk, serai, dan daun kunyit.</li>
+                            <li>Tambahkan daging sapi, aduk rata hingga berubah warna.</li>
+                            <li>Tuangkan santan, masak dengan api kecil sambil terus diaduk.</li>
+                            <li>Masak hingga kuah menyusut dan rendang mengering sesuai selera.</li>
+                            <li>Sajikan hangat dengan nasi putih.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>    
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+            <div class="footer-section">
+                <h3>Rasa Nusantara</h3>
+                <p>
+                Platform digital yang didedikasikan untuk melestarikan dan
+                memperkenalkan kekayaan kuliner tradisional Indonesia kepada
+                dunia.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>Navigasi</h3>
+                <p><a href="index.html">Beranda</a></p>
+                <p><a href="resep.html">Resep</a></p>
+                <p><a href="#about">Tentang</a></p>
+                <p><a href="#news">Berita</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Kontak</h3>
+                <p>📧 info@rasanusantara.id</p>
+                <p>📱 +62 21 1234 5678</p>
+                <p>📍 Jakarta, Indonesia</p>
+            </div>
+            <div class="footer-section">
+                <h3>Ikuti Kami</h3>
+                <p><a href="#">Facebook</a></p>
+                <p><a href="#">Instagram</a></p>
+                <p><a href="#">Twitter</a></p>
+                <p><a href="#">YouTube</a></p>
+            </div>
+            </div>
+            <div class="footer-bottom">
+            <p>
+                &copy; 2025 Rasa Nusantara. Dibuat dengan ❤️ untuk kuliner
+                Indonesia.
+            </p>
+            </div>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+</html>
