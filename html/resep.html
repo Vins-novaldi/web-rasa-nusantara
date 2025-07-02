@@ -31,106 +31,206 @@
                 <button class="tab" data-category="drink">Minuman</button>
             </div>
             <div class="resep-grid">
-                <div class="resep-card" data-category="main" onclick="openModal('rendang')">
-                    <div class="resep-image">
-                        <img src="../image/rendang.jpg" alt="" />
-                    </div>
-                    <div class="resep-content">
-                        <h3>Rendang Padang</h3>
-                        <p>Masakan daging sapi yang dimasak dengan bumbu rempah-rempah khas Minangkabau</p>
-                        <div class="resep-meta">
-                            <span>⏱️ 4 jam</span>
-                            <span class="rating">⭐⭐⭐⭐⭐</span>
+                <div class="resep-card" data-category="main" >
+                    <div class="resep-card-box" >
+                        <div class="resep-image">
+                            <img src="../image/rendang.jpg" alt="" />
+                        </div>
+                        <div class="resep-content">
+                            <h3>Rendang Padang</h3>
+                            <p>Masakan daging sapi yang dimasak dengan bumbu rempah-rempah khas Minangkabau</p>
+                            <div class="resep-meta">
+                                <span>⏱️ 4 jam</span>
+                                <span class="rating">⭐⭐⭐⭐⭐</span>
+                            </div>
                         </div>
                     </div>
-                    <button class="view-resep-btn">Lihat Resep</button>
+                    <div class="btn-box">
+                        <button class="view-resep-btn" onclick="openModal('rendang')">Lihat Resep</button>
+                    </div>
                 </div>
 
-                <div class="resep-card" data-category="main" onclick="openModal('gudeg')">
-                    <div class="resep-image">
-                        <img src="../image/gudeg.jpg" alt="" />
-                    </div>
-                    <div class="resep-content">
-                        <h3>Gudeg Yogyakarta</h3>
-                        <p>Makanan tradisional dari nangka muda yang dimasak dengan santan dan gula kelapa</p>
-                        <div class="resep-meta">
-                            <span>⏱️ 6 jam</span>
-                            <span class="rating">⭐⭐⭐⭐⭐</span>
+                <div class="resep-card" data-category="main" >
+                    <div class="resep-card-box" >
+                        <div class="resep-image">
+                            <img src="../image/gudeg.jpg" alt="" />
+                        </div>
+                        <div class="resep-content">
+                            <h3>Gudeg Yogyakarta</h3>
+                            <p>Makanan tradisional dari nangka muda yang dimasak dengan santan dan gula kelapa</p>
+                            <div class="resep-meta">
+                                <span>⏱️ 6 jam</span>
+                                <span class="rating">⭐⭐⭐⭐⭐</span>
+                            </div>
                         </div>
                     </div>
-                    <button class="view-resep-btn">Lihat Resep</button>
+                    <div class="btn-box">
+                        <button class="view-resep-btn" onclick="openModal('gudeg')">Lihat Resep</button>
+                    </div>
                 </div>
 
-                <div class="resep-card" data-category="side" onclick="openModal('pempek')">
-                    <div class="resep-image">
-                        <img src="../image/pempek.jpg" alt="" />
-                    </div>
-                    <div class="resep-content">
-                        <h3>Pempek Palembang</h3>
-                        <p>
-                            Makanan khas Palembang berbahan ikan dan sagu yang disajikan
-                            dengan kuah cuko
-                        </p>
+                <div class="resep-card" data-category="drink" >
+                    <div class="resep-card-box">
+                      <div class="resep-image">
+                        <img src="../image/wedang-jahe.jpg" alt="Wedang Jahe" />
+                      </div>
+                      <div class="resep-content">
+                        <h3>Wedang Jahe</h3>
+                        <p>Minuman hangat tradisional dari jahe segar, gula merah, dan rempah pilihan.</p>
                         <div class="resep-meta">
-                            <span>⏱️ 2 jam</span>
-                            <span class="rating">⭐⭐⭐⭐</span>
+                          <span>⏱️ 20 menit</span>
+                          <span class="rating">⭐⭐⭐⭐</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="btn-box">
+                      <button class="view-resep-btn" onclick="openModal('wedang-jahe')">Lihat Resep</button>
+                    </div>
+                </div>
+                
+                <div class="resep-card" data-category="side" >
+                    <div class="resep-card-box" >
+                        <div class="resep-image">
+                            <img src="../image/pempek.jpg" alt="" />
+                        </div>
+                        <div class="resep-content">
+                            <h3>Pempek Palembang</h3>
+                            <p>
+                                Makanan khas Palembang berbahan ikan dan sagu yang disajikan
+                                dengan kuah cuko
+                            </p>
+                            <div class="resep-meta">
+                                <span>⏱️ 2 jam</span>
+                                <span class="rating">⭐⭐⭐⭐</span>
+                            </div>
                         </div>
                     </div>
-                    <button class="view-resep-btn">Lihat Resep</button>
+                    <div class="btn-box">
+                        <button class="view-resep-btn" onclick="openModal('pempek')">Lihat Resep</button>
+                    </div>
                 </div>
 
-                <div class="resep-card" data-category="side" onclick="openModal('soto')">
-                    <div class="resep-image">
-                        <img src="../image/sotobetawi.jpg" alt="" />
-                    </div>
-                    <div class="resep-content">
-                        <h3>Soto Betawi</h3>
-                        <p>
-                            Sup tradisional Jakarta dengan kuah santan, daging sapi, dan
-                            sayuran segar
-                        </p>
-                        <div class="resep-meta">
-                            <span>⏱️ 3 jam</span>
-                            <span class="rating">⭐⭐⭐⭐</span>
+                <div class="resep-card" data-category="side" >
+                    <div class="resep-card-box" >
+                        <div class="resep-image">
+                            <img src="../image/sotobetawi.jpg" alt="" />
+                        </div>
+                        <div class="resep-content">
+                            <h3>Soto Betawi</h3>
+                            <p>
+                                Sup tradisional Jakarta dengan kuah santan, daging sapi, dan
+                                sayuran segar
+                            </p>
+                            <div class="resep-meta">
+                                <span>⏱️ 3 jam</span>
+                                <span class="rating">⭐⭐⭐⭐</span>
+                            </div>
                         </div>
                     </div>
-                    <button class="view-resep-btn">Lihat Resep</button>
+                    <div class="btn-box">
+                        <button class="view-resep-btn" onclick="openModal('soto')">Lihat Resep</button>
+                    </div>
                 </div>
 
-                <div class="resep-card" data-category="snack" onclick="openModal('gado')">
-                    <div class="resep-image">
-                        <img src="../image/gado2.jpg" alt="" />
-                    </div>
-                    <div class="resep-content">
-                        <h3>Gado-Gado Jakarta</h3>
-                        <p>
-                            Salad Indonesia dengan sayuran rebus dan bumbu kacang yang lezat
-                        </p>
+                <div class="resep-card" data-category="drink" >
+                    <div class="resep-card-box">
+                      <div class="resep-image">
+                        <img src="../image/es-cendol.jpg" alt="Es Cendol" />
+                      </div>
+                      <div class="resep-content">
+                        <h3>Es Cendol / Dawet</h3>
+                        <p>Minuman manis segar berbahan tepung beras, santan, dan gula merah cair.</p>
                         <div class="resep-meta">
-                            <span>⏱️ 45 menit</span>
-                            <span class="rating">⭐⭐⭐⭐</span>
+                          <span>⏱️ 30 menit</span>
+                          <span class="rating">⭐⭐⭐⭐⭐</span>
                         </div>
+                      </div>
                     </div>
-                    <button class="view-resep-btn">Lihat Resep</button>
+                    <div class="btn-box">
+                      <button class="view-resep-btn" onclick="openModal('es-cendol')">Lihat Resep</button>
+                    </div>
                 </div>
 
-                <div class="resep-card" data-category="main" onclick="openModal('nasi-liwet')">
-                    <div class="resep-image">
-                        <img src="../image/nasiliwet.jpg" alt="" />
-                    </div>
-                    <div class="resep-content">
-                        <h3>Nasi Liwet Solo</h3>
-                        <p>
-                            Nasi gurih khas Solo yang dimasak dengan santan dan
-                            rempah-rempah
-                        </p>
+                <div class="resep-card" data-category="drink" >
+                    <div class="resep-card-box">
+                      <div class="resep-image">
+                        <img src="../image/kawa-daun.jpg" alt="Kawa Daun" />
+                      </div>
+                      <div class="resep-content">
+                        <h3>Kawa Daun</h3>
+                        <p>Minuman khas Sumatera Barat dari daun kopi yang disangrai seperti teh.</p>
                         <div class="resep-meta">
-                            <span>⏱️ 1.5 jam</span>
-                            <span class="rating">⭐⭐⭐⭐⭐</span>
+                          <span>⏱️ 25 menit</span>
+                          <span class="rating">⭐⭐⭐⭐</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="btn-box">
+                      <button class="view-resep-btn" onclick="openModal('kawa-daun')">Lihat Resep</button>
+                    </div>
+                </div>
+                
+                <div class="resep-card" data-category="snack" >
+                    <div class="resep-card-box" >
+                        <div class="resep-image">
+                            <img src="../image/gado2.jpg" alt="" />
+                        </div>
+                        <div class="resep-content">
+                            <h3>Gado-Gado Jakarta</h3>
+                            <p>
+                                Salad Indonesia dengan sayuran rebus dan bumbu kacang yang lezat
+                            </p>
+                            <div class="resep-meta">
+                                <span>⏱️ 45 menit</span>
+                                <span class="rating">⭐⭐⭐⭐</span>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="btn-box">
+                        <button class="view-resep-btn" onclick="openModal('gado')">Lihat Resep</button>
+                    </div>
+                </div>
+
+                <div class="resep-card" data-category="main" >
+                    <div class="resep-card-box" >
+                        <div class="resep-image">
+                            <img src="../image/nasiliwet.jpg" alt="" />
+                        </div>
+                        <div class="resep-content">
+                            <h3>Nasi Liwet Solo</h3>
+                            <p>
+                                Nasi gurih khas Solo yang dimasak dengan santan dan
+                                rempah-rempah
+                            </p>
+                            <div class="resep-meta">
+                                <span>⏱️ 1.5 jam</span>
+                                <span class="rating">⭐⭐⭐⭐⭐</span>
+                            </div>
                         </div>
                     </div>
-                    <button class="view-resep-btn">Lihat Resep</button>
+                    <div class="btn-box">
+                        <button class="view-resep-btn" onclick="openModal('nasi-liwet')">Lihat Resep</button>
+                    </div>
                 </div>
+
+                <div class="resep-card" data-category="drink" >
+                    <div class="resep-card-box">
+                      <div class="resep-image">
+                        <img src="../image/teh-talua.jpg" alt="Teh Talua" />
+                      </div>
+                      <div class="resep-content">
+                        <h3>Teh Talua</h3>
+                        <p>Minuman khas Minangkabau dari campuran teh panas, kuning telur, dan jeruk nipis.</p>
+                        <div class="resep-meta">
+                          <span>⏱️ 15 menit</span>
+                          <span class="rating">⭐⭐⭐⭐</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="btn-box">
+                      <button class="view-resep-btn" onclick="openModal('teh-talua')">Lihat Resep</button>
+                    </div>
+                </div>                  
             </div>
         </section>
 
@@ -211,6 +311,31 @@
                     </div>
                 </div>
 
+                <div class="resep-detail" id="wedang-jahe">
+                    <h1 class="resep-detail-title">Wedang Jahe</h1>
+                    <p class="resep-detail-subtitle">Minuman tradisional Jawa yang menghangatkan tubuh dan menyehatkan</p>
+                    <div class="resep-detail-image">
+                      <img src="../image/wedang-jahe.jpg" alt="Wedang Jahe" />
+                    </div>
+                    <div class="resep-detail-content">
+                      <h2>Bahan-bahan:</h2>
+                      <ul>
+                        <li>100 gram jahe, bakar dan memarkan</li>
+                        <li>500 ml air</li>
+                        <li>50 gram gula merah, serut halus</li>
+                        <li>1 batang serai, memarkan (opsional)</li>
+                        <li>2 lembar daun pandan (opsional)</li>
+                      </ul>
+                      <h2>Cara Membuat:</h2>
+                      <ol>
+                        <li>Rebus air bersama jahe, serai, dan daun pandan hingga harum (sekitar 10–15 menit).</li>
+                        <li>Masukkan gula merah, aduk hingga larut.</li>
+                        <li>Angkat dan saring ke dalam gelas saji.</li>
+                        <li>Sajikan hangat.</li>
+                      </ol>
+                    </div>
+                </div>
+                
                 <div class="resep-detail" id="pempek">
                     <h1 class="resep-detail-title">Pempek Palembang</h1>
                     <p class="resep-detail-subtitle">Olahan ikan dan sagu yang kenyal, disajikan dengan cuko khas Palembang</p>
@@ -281,6 +406,59 @@
                     </div>
                 </div>
 
+                <div class="resep-detail" id="es-cendol">
+                    <h1 class="resep-detail-title">Es Cendol / Dawet</h1>
+                    <p class="resep-detail-subtitle">Minuman segar tradisional dari tepung beras, santan, dan gula merah</p>
+                    <div class="resep-detail-image">
+                      <img src="../image/es-cendol.jpg" alt="Es Cendol" />
+                    </div>
+                    <div class="resep-detail-content">
+                      <h2>Bahan-bahan Cendol:</h2>
+                      <ul>
+                        <li>100 gram tepung beras</li>
+                        <li>25 gram tepung tapioka</li>
+                        <li>400 ml air</li>
+                        <li>Pewarna hijau daun pandan</li>
+                      </ul>
+                      <h2>Bahan Pelengkap:</h2>
+                      <ul>
+                        <li>500 ml santan (rebus dengan sedikit garam)</li>
+                        <li>250 gram gula merah, larutkan dengan sedikit air</li>
+                        <li>Es batu secukupnya</li>
+                      </ul>
+                      <h2>Cara Membuat:</h2>
+                      <ol>
+                        <li>Campur tepung beras, tapioka, air, dan pewarna. Masak sambil diaduk hingga kental.</li>
+                        <li>Cetak cendol menggunakan cetakan atau saringan ke dalam air es.</li>
+                        <li>Siapkan gelas: masukkan cendol, gula merah cair, santan, dan es batu.</li>
+                        <li>Sajikan dingin.</li>
+                      </ol>
+                    </div>
+                </div>
+            
+                <div class="resep-detail" id="kawa-daun">
+                    <h1 class="resep-detail-title">Kawa Daun</h1>
+                    <p class="resep-detail-subtitle">Minuman khas Sumatera Barat dari daun kopi yang disangrai</p>
+                    <div class="resep-detail-image">
+                      <img src="../image/kawa-daun.jpg" alt="Kawa Daun" />
+                    </div>
+                    <div class="resep-detail-content">
+                      <h2>Bahan-bahan:</h2>
+                      <ul>
+                        <li>Segenggam daun kopi muda, keringkan</li>
+                        <li>Air panas secukupnya</li>
+                        <li>Gula aren atau madu (opsional)</li>
+                      </ul>
+                      <h2>Cara Membuat:</h2>
+                      <ol>
+                        <li>Sangrai daun kopi di atas wajan tanpa minyak hingga wangi dan kecokelatan.</li>
+                        <li>Rebus daun sangrai dengan air panas selama 5–10 menit.</li>
+                        <li>Saring dan sajikan dalam tempurung kelapa atau cangkir.</li>
+                        <li>Tambahkan pemanis jika suka.</li>
+                      </ol>
+                    </div>
+                </div>
+
                 <div class="resep-detail" id="gado">
                     <h1 class="resep-detail-title">Gado-Gado Jakarta</h1>
                     <p class="resep-detail-subtitle">Salad khas Indonesia dengan bumbu kacang yang gurih dan manis</p>
@@ -342,6 +520,30 @@
                       </ol>
                     </div>
                 </div> 
+
+                <div class="resep-detail" id="teh-talua">
+                    <h1 class="resep-detail-title">Teh Talua</h1>
+                    <p class="resep-detail-subtitle">Minuman energi tradisional Minangkabau yang unik dan berkhasiat</p>
+                    <div class="resep-detail-image">
+                      <img src="../image/teh-talua.jpg" alt="Teh Talua" />
+                    </div>
+                    <div class="resep-detail-content">
+                      <h2>Bahan-bahan:</h2>
+                      <ul>
+                        <li>1 kuning telur ayam kampung</li>
+                        <li>2 sdm gula pasir</li>
+                        <li>200 ml teh panas kental</li>
+                        <li>Air perasan jeruk nipis (opsional)</li>
+                      </ul>
+                      <h2>Cara Membuat:</h2>
+                      <ol>
+                        <li>Kocok kuning telur dan gula hingga mengembang dan pucat (menggunakan garpu atau whisk).</li>
+                        <li>Tuang teh panas sedikit demi sedikit sambil terus diaduk agar tidak menggumpal.</li>
+                        <li>Tambahkan sedikit perasan jeruk nipis jika diinginkan untuk mengurangi bau amis.</li>
+                        <li>Sajikan hangat.</li>
+                      </ol>
+                    </div>
+                </div>  
             </div>    
         </section>
     </main>

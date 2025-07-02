@@ -110,6 +110,7 @@ header.scrolled .nav-link a {
     position: relative;
     height: 500px;
     background: url('../image/bg/slide2.jpg') center/cover;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,11 +123,13 @@ header.scrolled .nav-link a {
 
 .hero-content {
     color: white;
-    max-width: 600px;
+    width: 100%;;
     padding: 40px;
     border-radius: 20px;
     transition: transform 0.2s ease-out;
     will-change: transform;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .hero-title {
