@@ -110,14 +110,14 @@ header.scrolled .nav-link a {
     position: relative;
     height: 500px;
     background: url('../image/bg/slide2.jpg') center/cover;
-    /* background: linear-gradient(rgba(93, 64, 55, 0.6), rgba(139, 69, 19, 0.4)),  */
-                        url('https://images.unsplash.com/photo-1556909114-4e1bb8d4d4c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     border-radius: 0 0 30px 30px;
     overflow: hidden;
+    background-attachment: fixed;
+
 }
 
 .hero-content {
@@ -125,6 +125,8 @@ header.scrolled .nav-link a {
     max-width: 600px;
     padding: 40px;
     border-radius: 20px;
+    transition: transform 0.2s ease-out;
+    will-change: transform;
 }
 
 .hero-title {
@@ -152,29 +154,12 @@ header.scrolled .nav-link a {
     text-align: center;
 }
 
-.section-header {
-    margin-bottom: 60px;
-}
-
-.section-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: #8b4513;
-    margin-bottom: 15px;
-}
-
-.section-subtitle {
-    font-size: 1.2rem;
-    color: #795548;
-    font-weight: 300;
-}
 
 .articles-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     gap: 40px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .article-card {

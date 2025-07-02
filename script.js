@@ -41,6 +41,12 @@ window.addEventListener("scroll", () => {
   });
 });
 
+window.addEventListener("scroll", function () {
+  const hero = document.getElementById("parallaxHero");
+  const scrollY = window.scrollY;
+  hero.style.transform = `translateY(${scrollY * 0.4}px)`; // Parallax offset
+});
+
 // =======================FILTER TAB=================
 // Filter functionality
 const filterTabs = document.querySelectorAll('.tab');
