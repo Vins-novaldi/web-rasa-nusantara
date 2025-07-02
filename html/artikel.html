@@ -1,79 +1,411 @@
-
-
 <!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <title>Artikel Kuliner</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #F5EBDD;
-      padding: 20px;
-    }
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rasa Nusantara - Resep</title>
+    <link rel="stylesheet" href="../css/artikel.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-container">
+        <div class="logo">Rasa Nusantara</div>
+        <ul class="nav-link">
+          <li><a href="../index.html">Beranda</a></li>
+          <li><a href="resep.html">Resep</a></li>
+          <li><a href="cerita.html">Cerita</a></li>
+          <li><a href="about.html">Tentang</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    .artikel {
-      display: none;
-      background: #fff;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      max-width: 800px;
-      margin: auto;
-    }
+    <main>
+      <section class="main-container">
+        <div class="artikel" id="rendang">
+          <h1>Rendang: Warisan Rasa Minangkabau</h1>
+          <p class="meta">
+            📍 Asal: Minangkabau, Sumatera Barat | 🕰️ Tradisi sejak abad ke-16
+          </p>
+          <img
+            src="../image/rendang.jpg"
+            alt="Rendang Daging"
+            class="article-image"
+          />
 
-    .artikel.active {
-      display: block;
-    }
+          <p>
+            Rendang (bahasa Minangkabau: randang) adalah lauk pauk berbahan
+            daging yang dimasak perlahan dengan santan dan rempah-rempah khas
+            Minang. Pengolahan lambat (slow-cooking) selama berjam-jam
+            menghasilkan tekstur empuk dan bumbu yang meresap sempurna.
+          </p>
 
-    h2 {
-      color: #8B5E3C;
-    }
+          <p>
+            Kata "randang" berasal dari proses “marandang”, yaitu teknik memasak
+            santan hingga kering dan menyatu dengan bumbu. Teknik ini digunakan
+            sejak abad ke-16 untuk membuat makanan tahan lama sebagai bekal para
+            perantau Minangkabau.
+          </p>
 
-    .back {
-      display: inline-block;
-      margin-bottom: 20px;
-      color: #C1440E;
-      text-decoration: none;
-    }
+          <p>
+            Awalnya rendang dibuat dari daging kerbau, namun lambat laun daging
+            sapi menjadi bahan utama karena lebih empuk dan mudah diperoleh.
+            Bumbu rempahnya meliputi cabai, serai, lengkuas, jahe, kunyit,
+            bawang merah, bawang putih, dan daun jeruk.
+          </p>
 
-    .back:hover {
-      text-decoration: underline;
-    }
+          <p>
+            Dalam adat Minangkabau, rendang sering disajikan pada upacara adat,
+            pernikahan, kenduri, dan hari raya, sebagai simbol kehormatan dan
+            kebersamaan keluarga. Karena proses memasaknya yang lama, rendang
+            bisa tahan berminggu-minggu dalam suhu ruang.
+          </p>
 
-    img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
+          <p>
+            Secara internasional, rendang diakui sebagai makanan terenak di
+            dunia — menempati peringkat pertama dalam daftar *World’s 50 Best
+            Foods* versi CNN pada tahun 2011 dan 2017. Rendang juga populer di
+            kawasan Asia Tenggara seperti Malaysia, Singapura, dan Brunei.
+          </p>
 
-    p {
-      line-height: 1.6;
-      text-align: justify;
-    }
-  </style>
-</head>
-<body>
+          <p>
+            Pengaruh budaya India dari pedagang Gujarat di abad ke-14 turut
+            memperkaya penggunaan bumbu dalam rendang, menjadikannya lebih
+            kompleks dan bercita rasa dalam.
+          </p>
 
-  <a href="index.html" class="back">← Kembali</a>
+          <p>
+            <em
+              >“Rendang bukan hanya soal rasa, tapi tentang cerita yang
+              diturunkan dari satu generasi ke generasi berikutnya.”</em
+            >
+          </p>
 
-  <!-- Artikel Rendang -->
-  <div class="artikel" id="rendang">
-    <h2>Rendang: Perjalanan Rempah dari Ranah Minang</h2>
-    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80" alt="Rendang">
-    <p>Rendang telah menjadi duta kuliner Indonesia di mata dunia. Namun di balik cita rasanya yang kompleks, tersimpan cerita tentang perjalanan pedagang Minang dan filosofi hidup yang dalam.</p>
-    <p>Proses memasaknya melambangkan kesabaran, kedalaman rasa, dan ketahanan budaya masyarakat Sumatera Barat.</p>
-  </div>
+          <a href="../index.html" class="back"
+            >← Kembali ke Cerita di Balik Rasa</a
+          >
+        </div>
 
-  <!-- Artikel Gudeg -->
-  <div class="artikel" id="gudeg">
-    <h2>Filosofi Gudeg: Simbol Kesabaran dan Kebersamaan</h2>
-    <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Gudeg">
-    <p>Gudeg bukan sekadar makanan manis khas Yogyakarta. Di balik kelezatan nangka muda yang dimasak berjam-jam, tersimpan filosofi mendalam tentang kesabaran, kebersamaan, dan warisan leluhur yang tak ternilai.</p>
-    <p>Proses memasaknya yang lama mengajarkan kita tentang ketekunan dan cinta dalam tradisi kuliner Jawa.</p>
-  </div>
+        <div class="artikel" id="gudeg">
+          <h1>Filosofi Gudeg: Simbol Kesabaran dan Kebersamaan</h1>
+          <p class="meta">
+            📍 Asal: Yogyakarta, Jawa Tengah | 🕰️ Warisan sejak zaman Mataram
+            Islam
+          </p>
 
-<script src="../script.js"></script>
+          <img
+            src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+            alt="Gudeg Yogyakarta"
+            class="article-image"
+          />
 
-</body>
+          <p>
+            Gudeg adalah masakan khas Yogyakarta yang terbuat dari nangka muda
+            (gori) yang dimasak dalam waktu lama dengan santan dan rempah-rempah
+            khas Jawa. Rasa manisnya yang khas serta aroma daun jati yang
+            digunakan sebagai pewarna alami menjadikan gudeg sebagai ikon
+            kuliner kota Yogyakarta.
+          </p>
+
+          <p>
+            Di balik rasa manis yang unik, tersimpan nilai filosofi mendalam.
+            Proses memasak gudeg membutuhkan waktu hingga 6 jam atau lebih,
+            menggambarkan nilai kesabaran, ketekunan, dan kasih sayang dalam
+            tradisi Jawa. Gudeg tidak bisa dimasak tergesa-gesa — ia butuh
+            perhatian penuh, seperti halnya membangun hubungan dalam keluarga
+            dan masyarakat.
+          </p>
+
+          <p>
+            Gudeg pertama kali dikenal sejak zaman Kesultanan Mataram dan terus
+            berkembang menjadi simbol identitas Yogyakarta. Selain nangka muda,
+            gudeg biasanya disajikan bersama sambal krecek, telur pindang, ayam
+            kampung, dan areh (kuah santan kental), yang masing-masing punya
+            makna tersendiri dalam konsep keseimbangan rasa dan warna dalam
+            budaya Jawa.
+          </p>
+
+          <p>
+            Nama "gudeg" diduga berasal dari bunyi "digodhog" (direbus) — karena
+            proses utama dalam memasaknya adalah merebus nangka muda dalam waktu
+            lama hingga menghitam dan mengental.
+          </p>
+
+          <p>
+            Filosofi gudeg juga erat dengan konsep “alon-alon asal kelakon”,
+            yang berarti melakukan sesuatu dengan tenang dan sabar akan
+            menghasilkan sesuatu yang baik dan bermakna. Gudeg tidak hanya
+            menyatukan rasa, tetapi juga menyatukan keluarga dan komunitas di
+            setiap kesempatan makan bersama.
+          </p>
+
+          <p>
+            <em
+              >“Di setiap sendok gudeg, ada pelajaran tentang ketekunan,
+              tradisi, dan manisnya kebersamaan.”</em
+            >
+          </p>
+
+          <a href="../index.html" class="back"
+            >← Kembali ke Cerita di Balik Rasa</a
+          >
+        </div>
+
+        <div class="artikel" id="nasibali">
+          <h1>Nasi Bali: Harmoni Rasa dalam Piring</h1>
+          <p class="meta">
+            📍 Asal: Bali | 🕰️ Warisan budaya kuliner masyarakat Hindu Bali
+          </p>
+          <img
+            src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80"
+            alt="Nasi Bali"
+            class="article-image"
+          />
+
+          <p>
+            Nasi Bali adalah sajian khas Pulau Dewata yang mencerminkan filosofi
+            keseimbangan dan spiritualitas masyarakat Hindu Bali. Dalam seporsi
+            nasi Bali, terdapat kombinasi lauk pauk dengan rasa pedas dan gurih
+            yang menggugah selera, seperti ayam betutu, sate lilit, lawar,
+            sambal matah, dan telur pindang.
+          </p>
+
+          <p>
+            Makanan ini bukan sekadar santapan sehari-hari, tetapi juga menjadi
+            bagian dari persembahan dalam upacara adat dan ritual keagamaan.
+            Nasi putih dalam hidangan ini melambangkan kesucian, sementara lauk
+            pauknya melambangkan unsur alam — api, air, udara, dan tanah — dalam
+            ajaran Tri Hita Karana yang mengedepankan harmoni antara manusia,
+            alam, dan Sang Hyang Widhi (Tuhan).
+          </p>
+
+          <p>
+            Komposisi rasa dalam nasi Bali mencerminkan karakter masyarakat Bali
+            yang kuat dalam menjaga tradisi, penuh semangat, dan menghargai
+            keseimbangan hidup. Tidak jarang, sajian ini dibuat dengan
+            menggunakan bahan-bahan lokal dari pekarangan sendiri, seperti daun
+            singkong, kelapa parut, dan rempah-rempah Bali yang aromatik.
+          </p>
+
+          <p>
+            Salah satu lauk yang paling terkenal dalam nasi Bali adalah ayam
+            betutu — ayam utuh yang dimasak perlahan dengan bumbu lengkap khas
+            Bali yang disebut base genep. Proses memasaknya bisa memakan waktu
+            berjam-jam untuk menghasilkan tekstur yang empuk dan rasa yang
+            meresap.
+          </p>
+
+          <p>
+            Dalam konteks modern, nasi Bali banyak ditemukan di warung makan
+            lokal maupun restoran kelas atas. Namun rasa autentiknya tetap
+            dijaga dengan resep warisan keluarga yang diturunkan dari generasi
+            ke generasi.
+          </p>
+
+          <p>
+            <em
+              >“Nasi Bali bukan sekadar makanan — ia adalah refleksi
+              keseimbangan, kepercayaan, dan kecintaan terhadap alam dan
+              budaya.”</em
+            >
+          </p>
+
+          <a href="../index.html" class="back"
+            >← Kembali ke Cerita di Balik Rasa</a
+          >
+        </div>
+
+        <div class="artikel" id="rawon">
+          <h1>Rawon: Kegelapan yang Memikat</h1>
+          <p class="meta">
+            📍 Asal: Jawa Timur | 🕰️ Sejak zaman Kerajaan Mataram Kuno
+          </p>
+          <img
+            src="https://images.unsplash.com/photo-1563379091239-d9a32febceb9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+            alt="Rawon"
+            class="article-image"
+          />
+
+          <p>
+            Rawon adalah sup daging berkuah hitam khas Jawa Timur, yang dikenal
+            karena warna dan cita rasa khasnya yang berasal dari biji kluwek.
+            Warna gelap pekat kuahnya mungkin terlihat asing bagi sebagian
+            orang, tapi justru menjadi daya tarik utama kuliner ini.
+          </p>
+
+          <p>
+            Kluwek atau kepayang memberikan rasa khas pahit-manis yang menyatu
+            dengan kaldu daging sapi yang kaya. Dalam proses memasaknya, daging
+            sapi direbus dengan bumbu halus seperti bawang merah, bawang putih,
+            ketumbar, serai, daun jeruk, lengkuas, dan terasi.
+          </p>
+
+          <p>
+            Rawon sering disajikan dengan nasi putih, tauge pendek, sambal,
+            kerupuk udang, dan telur asin. Hidangan ini bukan hanya makanan,
+            tapi bagian dari tradisi kuliner keluarga di Jawa Timur dan bahkan
+            menjadi bagian dari sajian acara resmi atau pernikahan.
+          </p>
+
+          <p>
+            Filosofi rawon mencerminkan keberanian dan rasa percaya diri — bahwa
+            rasa yang kuat dan penampilan yang berbeda justru punya tempat
+            istimewa dalam budaya Indonesia.
+          </p>
+
+          <p>
+            <em
+              >"Di balik gelapnya kuah rawon, tersembunyi kekayaan rasa dan
+              kisah tradisi yang telah mengakar sejak berabad lalu."</em
+            >
+          </p>
+
+          <a href="../index.html" class="back"
+            >← Kembali ke Cerita di Balik Rasa</a
+          >
+        </div>
+
+        <div class="artikel" id="cotomakasar">
+          <h1>Coto Makassar: Kehangatan dari Tanah Bugis</h1>
+          <p class="meta">
+            📍 Asal: Makassar, Sulawesi Selatan | 🕰️ Tradisi sejak abad ke-16
+          </p>
+          <img
+            src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-4.0.3&auto=format&fit=crop&w=2072&q=80"
+            alt="Coto Makassar"
+            class="article-image"
+          />
+
+          <p>
+            Coto Makassar adalah sup khas Makassar yang terbuat dari jeroan dan
+            daging sapi yang direbus dalam waktu lama bersama racikan bumbu
+            rempah khas Sulawesi. Hidangan ini kaya rasa dan sering disantap
+            bersama ketupat atau buras.
+          </p>
+
+          <p>
+            Bumbu coto menggunakan bawang putih, kemiri, lengkuas, jahe, dan
+            ketumbar yang ditumis dan dicampur dengan kaldu sapi, serta diberi
+            tambahan kacang tanah yang dihaluskan — memberikan tekstur gurih dan
+            aroma yang dalam.
+          </p>
+
+          <p>
+            Dalam budaya Bugis, coto Makassar bukan sekadar makanan, tapi juga
+            simbol keramahan dan solidaritas sosial. Ia biasa hadir dalam acara
+            kumpul keluarga, perayaan, dan sebagai jamuan kehormatan bagi tamu.
+          </p>
+
+          <p>
+            Hangat, pekat, dan menyatu dengan cita rasa daerah — Coto Makassar
+            adalah bukti betapa kentalnya identitas kuliner Bugis yang kaya akan
+            nilai kekeluargaan.
+          </p>
+
+          <p>
+            <em
+              >"Coto bukan hanya mengisi perut, tapi juga menghangatkan hati dan
+              menyatukan pertemanan."</em
+            >
+          </p>
+
+          <a href="../index.html" class="back"
+            >← Kembali ke Cerita di Balik Rasa</a
+          >
+        </div>
+
+        <div class="artikel" id="sotomedan">
+          <h1>Soto Medan: Perpaduan Budaya dalam Mangkuk</h1>
+          <p class="meta">
+            📍 Asal: Medan, Sumatera Utara | 🕰️ Cerminan budaya multietnis kota
+            Medan
+          </p>
+          <img
+            src="https://images.unsplash.com/photo-1606728035253-49e8a23146de?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+            alt="Soto Medan"
+            class="article-image"
+          />
+
+          <p>
+            Soto Medan adalah varian soto khas Sumatera Utara yang memiliki kuah
+            santan kental berwarna kuning kehijauan. Aromanya wangi dan rasanya
+            gurih, hasil perpaduan rempah seperti kunyit, serai, daun jeruk, dan
+            kemiri.
+          </p>
+
+          <p>
+            Isiannya bisa berupa ayam, daging sapi, atau udang, lengkap dengan
+            kentang goreng, telur rebus, tauge, dan emping. Soto Medan biasanya
+            disajikan dengan nasi putih dan sambal cabai rawit.
+          </p>
+
+          <p>
+            Hidangan ini mencerminkan keberagaman budaya masyarakat Medan — kota
+            yang dihuni oleh beragam etnis seperti Batak, Melayu, Tionghoa,
+            Minang, dan Jawa. Rasa sotonya pun seolah menjadi hasil kompromi
+            rasa antarbudaya yang harmonis.
+          </p>
+
+          <p>
+            Soto Medan bukan hanya kuliner harian, tapi juga kerap disajikan
+            saat acara keluarga, buka puasa, hingga hajatan. Kehangatan kuahnya
+            seolah menyambut setiap orang yang mencicipinya.
+          </p>
+
+          <p>
+            <em
+              >"Dalam semangkuk Soto Medan, tersaji lebih dari rasa — ada cerita
+              tentang keberagaman yang menyatu."</em
+            >
+          </p>
+
+          <a href="../index.html" class="back"
+            >← Kembali ke Cerita di Balik Rasa</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Rasa Nusantara</h3>
+            <p>
+              Platform digital yang didedikasikan untuk melestarikan dan
+              memperkenalkan kekayaan kuliner tradisional Indonesia kepada
+              dunia.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>Navigasi</h3>
+            <p><a href="index.html">Beranda</a></p>
+            <p><a href="resep.html">Resep</a></p>
+            <p><a href="#about">Tentang</a></p>
+            <p><a href="#news">Berita</a></p>
+          </div>
+          <div class="footer-section">
+            <h3>Kontak</h3>
+            <p>📧 info@rasanusantara.id</p>
+            <p>📱 +62 21 1234 5678</p>
+            <p>📍 Jakarta, Indonesia</p>
+          </div>
+          <div class="footer-section">
+            <h3>Ikuti Kami</h3>
+            <p><a href="#">Facebook</a></p>
+            <p><a href="#">Instagram</a></p>
+            <p><a href="#">Twitter</a></p>
+            <p><a href="#">YouTube</a></p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Rasa Nusantara. Dibuat dengan ❤️ untuk kuliner
+            Indonesia.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
 </html>
