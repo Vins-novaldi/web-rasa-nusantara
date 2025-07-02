@@ -1,0 +1,79 @@
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Artikel Kuliner</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #F5EBDD;
+      padding: 20px;
+    }
+
+    .artikel {
+      display: none;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .artikel.active {
+      display: block;
+    }
+
+    h2 {
+      color: #8B5E3C;
+    }
+
+    .back {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: #C1440E;
+      text-decoration: none;
+    }
+
+    .back:hover {
+      text-decoration: underline;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.6;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+
+  <a href="index.html" class="back">← Kembali</a>
+
+  <!-- Artikel Rendang -->
+  <div class="artikel" id="rendang">
+    <h2>Rendang: Perjalanan Rempah dari Ranah Minang</h2>
+    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2074&q=80" alt="Rendang">
+    <p>Rendang telah menjadi duta kuliner Indonesia di mata dunia. Namun di balik cita rasanya yang kompleks, tersimpan cerita tentang perjalanan pedagang Minang dan filosofi hidup yang dalam.</p>
+    <p>Proses memasaknya melambangkan kesabaran, kedalaman rasa, dan ketahanan budaya masyarakat Sumatera Barat.</p>
+  </div>
+
+  <!-- Artikel Gudeg -->
+  <div class="artikel" id="gudeg">
+    <h2>Filosofi Gudeg: Simbol Kesabaran dan Kebersamaan</h2>
+    <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Gudeg">
+    <p>Gudeg bukan sekadar makanan manis khas Yogyakarta. Di balik kelezatan nangka muda yang dimasak berjam-jam, tersimpan filosofi mendalam tentang kesabaran, kebersamaan, dan warisan leluhur yang tak ternilai.</p>
+    <p>Proses memasaknya yang lama mengajarkan kita tentang ketekunan dan cinta dalam tradisi kuliner Jawa.</p>
+  </div>
+
+<script src="../script.js"></script>
+
+</body>
+</html>

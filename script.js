@@ -104,4 +104,15 @@ function closeModal() {
   document.body.style.overflow = ''; // buka scroll kembali
 }
 
+// ================READ MORE==============================
+// Ambil parameter dari URL
+const params = new URLSearchParams(window.location.search);
+const id = params.get("id");
 
+// Tampilkan artikel sesuai id
+if (id) {
+  const artikel = document.getElementById(id);
+  if (artikel) {
+    artikel.classList.add("active");
+  }
+}
