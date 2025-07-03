@@ -35,6 +35,9 @@ menuToggle.addEventListener("click", () => {
 
 window.addEventListener("scroll", function () {
   const header = document.querySelector("header");
+
+  if (window.innerWidth <= 768) return;
+
   if (window.scrollY > 50) {
     header.classList.add("scrolled");
   } else {
