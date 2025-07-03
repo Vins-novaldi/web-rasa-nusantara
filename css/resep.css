@@ -350,10 +350,10 @@ header.scrolled {
     cursor: pointer;
     z-index: 10000;
   }
-/* ///////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
 footer {
   background: linear-gradient(135deg, #4a2c18, #8b4513);
-  color: #fff;
+  color: var(--bg-primary);
   padding: 3rem 1rem 2rem;
   font-family: "Segoe UI", sans-serif;
 }
@@ -382,15 +382,36 @@ footer {
   margin: 0.4rem 0;
 }
 
-.footer-section a {
-  color: #fff;
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.footer-section ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.footer-section ul li i {
+  color: #000;
+  margin-right: 0.6rem;
+  font-size: 1.2rem;
+}
+
+.footer-section ul li a{
+  color: var(--bg-primary);
   text-decoration: none;
   transition: color 0.3s;
 }
 
-.footer-section a:hover {
+.footer-section ul li a:hover {
   color: #ffd700;
 }
+
+
 
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
