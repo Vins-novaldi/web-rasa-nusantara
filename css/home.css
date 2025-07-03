@@ -119,9 +119,7 @@ header.scrolled .nav-link a {
   .menu-toggle {
     display: block;
   }
-  .logo {
-    font-size: 1.5rem;
-  }
+
   .nav-link {
     position: absolute;
     top: 100%;
@@ -337,23 +335,20 @@ header.scrolled .nav-link a {
 }
 
 @media (max-width: 768px) {
+  html {
+    font-size: 80%;
+  }
   .hero {
     height: 85vh;
     padding: 0 1rem;
   }
 
-  .hero h1 {
-    font-size: 2rem;
-  }
-
   .slogan {
-    font-size: 1rem;
     margin: 8px 0;
   }
 
   .cta-btn {
     padding: 10px 20px;
-    font-size: 0.9rem;
   }
 
   .hero-conten {
@@ -367,7 +362,6 @@ header.scrolled .nav-link a {
   }
 
   .section-title {
-    font-size: 2rem;
     margin-bottom: 2rem;
   }
 
@@ -378,22 +372,6 @@ header.scrolled .nav-link a {
 
   .card-content {
     padding: 0.5rem;
-  }
-
-  .card-title {
-    font-size: 0.9rem;
-  }
-
-  .card-description {
-    font-size: 0.8rem;
-  }
-
-  .card-date {
-    font-size: 0.7rem;
-  }
-
-  .read-more {
-    font-size: 0.7rem;
   }
 
   .card-image {
@@ -476,14 +454,6 @@ footer {
     gap: 1.5rem;
   }
 
-  .footer-section h3 {
-    font-size: 1.2rem;
-  }
-
-  .footer-section p,
-  .footer-section ul li {
-    font-size: 0.95rem;
-  }
 
   .footer-section ul li {
     justify-content: center;
@@ -494,7 +464,6 @@ footer {
   }
 
   .footer-bottom {
-    font-size: 0.85rem;
     padding: 1rem 0 0.5rem;
   }
 }

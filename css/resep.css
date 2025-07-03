@@ -471,11 +471,9 @@ header.scrolled {
   }
 
   .resep-detail-title {
-    /* font-size: 1.8rem; */
   }
 
   .resep-detail-subtitle {
-    /* font-size: 0.95rem; */
     margin-bottom: 1.5rem;
   }
 
@@ -487,11 +485,9 @@ header.scrolled {
 
   .resep-detail-content {
     padding: 0 0.5rem;
-    /* font-size: 0.95rem; */
   }
 
   .resep-detail-content h2 {
-    /* font-size: 1.2rem; */
     margin-top: 1.5rem;
   }
 
@@ -505,7 +501,6 @@ header.scrolled {
     top: 15px;
     right: 5px;
     padding: 4px 8px;
-    /* font-size: 1rem; */
   }
 }
 
@@ -579,18 +574,16 @@ footer {
 }
 @media (max-width: 768px) {
   .footer-content {
-    grid-template-columns: 1fr; /* Tumpuk semua kolom */
+    grid-template-columns: 1fr;
     text-align: center;
     gap: 1.5rem;
   }
 
   .footer-section h3 {
-    /* font-size: 1.2rem; */
   }
 
   .footer-section p,
   .footer-section ul li {
-    /* font-size: 0.95rem; */
   }
 
   .footer-section ul li {
@@ -598,11 +591,9 @@ footer {
   }
 
   .footer-section ul li i {
-    /* margin-right: 0.4rem; */
   }
 
   .footer-bottom {
-    /* font-size: 0.85rem; */
     padding: 1rem 0 0.5rem;
   }
 }

@@ -113,14 +113,11 @@ header.scrolled .nav-link a {
 }
 
 @media (max-width: 768px) {
-  header{
+  header {
     background-color: var(--bg-primary);
   }
   .menu-toggle {
     display: block;
-  }
-  .logo {
-    font-size: 1.5rem;
   }
   .nav-link {
     position: absolute;
@@ -239,7 +236,7 @@ header.scrolled .nav-link a {
 
 .artikel-content {
   padding: 30px;
-text-align: start;
+  text-align: start;
 }
 
 .artikel-title {
@@ -305,9 +302,11 @@ text-align: start;
   margin-bottom: 30px;
 }
 
-
 @media (max-width: 768px) {
-  main{
+  html {
+    font-size: 80%;
+  }
+  main {
     margin-top: 30px;
   }
   .hero-section {
@@ -321,17 +320,8 @@ text-align: start;
     padding: 20px;
   }
 
-  .hero-content h1 {
-    font-size: 2.2rem;
-  }
-
   .sub {
-    font-size: 1.1rem;
     margin-bottom: 20px;
-  }
-
-  .des {
-    font-size: 1rem;
   }
 
   .main-container {
@@ -355,17 +345,11 @@ text-align: start;
     padding: 20px;
   }
 
-  .artikel-title {
-    font-size: 1.3rem;
-  }
-
   .artikel-excerpt {
-    font-size: 0.95rem;
     margin-bottom: 20px;
   }
 
   .read-more-btn {
-    font-size: 0.95rem;
     padding: 10px 20px;
   }
 
@@ -379,16 +363,7 @@ text-align: start;
     height: 220px;
     border-radius: 10px;
   }
-
-  .featured-content .artikel-title {
-    font-size: 1.6rem;
-  }
-
-  .featured-content .artikel-excerpt {
-    font-size: 1rem;
-  }
 }
-
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////// */
 footer {
@@ -465,15 +440,6 @@ footer {
     gap: 1.5rem;
   }
 
-  .footer-section h3 {
-    font-size: 1.2rem;
-  }
-
-  .footer-section p,
-  .footer-section ul li {
-    font-size: 0.95rem;
-  }
-
   .footer-section ul li {
     justify-content: center;
   }
@@ -483,7 +449,6 @@ footer {
   }
 
   .footer-bottom {
-    font-size: 0.85rem;
     padding: 1rem 0 0.5rem;
   }
 }

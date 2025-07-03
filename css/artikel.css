@@ -110,14 +110,11 @@ header.scrolled {
 }
 
 @media (max-width: 768px) {
-  header{
+  header {
     background-color: var(--bg-primary);
   }
   .menu-toggle {
     display: block;
-  }
-  .logo {
-    font-size: 1.5rem;
   }
   .nav-link {
     position: absolute;
@@ -205,6 +202,9 @@ header.scrolled {
 }
 
 @media (max-width: 768px) {
+  html {
+    font-size: 80%;
+  }
   .main-container {
     padding: 20px;
     margin-top: 40px;
@@ -219,23 +219,16 @@ header.scrolled {
     border-radius: 8px;
   }
 
-  h1 {
-    font-size: 1.6rem;
-  }
-
   .sub {
-    font-size: 0.85rem;
     text-align: center;
     margin-bottom: 16px;
   }
 
   .artikel p {
-    font-size: 0.95rem;
     line-height: 1.6;
   }
 
   .back {
-    font-size: 0.95rem;
     margin-bottom: 16px;
     display: inline-block;
   }
@@ -312,19 +305,11 @@ footer {
 
 @media (max-width: 768px) {
   .footer-content {
-    grid-template-columns: 1fr; /* Tumpuk semua kolom */
+    grid-template-columns: 1fr;
     text-align: center;
     gap: 1.5rem;
   }
 
-  .footer-section h3 {
-    font-size: 1.2rem;
-  }
-
-  .footer-section p,
-  .footer-section ul li {
-    font-size: 0.95rem;
-  }
 
   .footer-section ul li {
     justify-content: center;
@@ -335,7 +320,6 @@ footer {
   }
 
   .footer-bottom {
-    font-size: 0.85rem;
     padding: 1rem 0 0.5rem;
   }
 }
