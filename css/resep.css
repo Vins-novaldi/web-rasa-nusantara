@@ -102,7 +102,6 @@ header.scrolled {
   width: 100%;
 }
 
-
 .menu-toggle {
   display: none;
   font-size: 1.8rem;
@@ -140,7 +139,6 @@ header.scrolled {
     padding: 0.5rem 0;
     transition: color 0.3s ease, transform 0.3s ease;
   }
-  
 }
 
 /* /////////////////////////////////////////////////////////////// */
@@ -207,7 +205,7 @@ header.scrolled {
   gap: 1rem;
   margin-top: 2rem;
 }
-.resep-card{
+.resep-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -230,16 +228,16 @@ header.scrolled {
 }
 
 .resep-image {
-    height: 200px;
-    position: relative;
-    overflow: hidden;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
 }
 
 .resep-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .resep-content {
@@ -269,7 +267,7 @@ header.scrolled {
   color: #ffa500;
 }
 
-.btn-box{
+.btn-box {
   width: 100%;
   padding: 5px 10px;
 }
@@ -291,107 +289,107 @@ header.scrolled {
 }
 /* /////////// */
 .second-view {
-    position: fixed;
-    inset: 0;
-    z-index: 9999;
-    display: none;
-  }
-  /* @keyframes fadeIn {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+}
+/* @keyframes fadeIn {
     from { opacity: 0; transform: scale(0.97); }
     to { opacity: 1; transform: scale(1); }
   } */
-  .modal-overlay {
-    position: absolute;
-    inset: 0;
-    backdrop-filter: blur(8px); /* efek blur */
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 1;
+.modal-overlay {
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(8px); /* efek blur */
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.modal-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 5vh auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  animation: slideUp 0.4s ease;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
   }
-  .modal-content {
-    position: relative;
-    z-index: 2;
-    max-width: 900px;
-    margin: 5vh auto;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    padding: 2rem;
-    animation: slideUp 0.4s ease;
-    max-height: 90vh;      
-  overflow-y: auto; 
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  @keyframes slideUp {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
+}
+
 .resep-detail {
-    background: white;
-    max-width: 800px;
-    margin: 0 auto 4rem;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    display: none;
-  }
-  
-  .resep-detail-title {
-    font-size: 2.5rem;
-    text-align: center;
-    color: #8B4513;
-  }
-  
-  .resep-detail-subtitle {
-    text-align: center;
-    font-style: italic;
-    color: #888;
-    margin-bottom: 2rem;
-  }
-  
-  .resep-detail-image img {
-    width: 100%;
-    max-width: 700px;
-    margin: 0 auto;
-    display: block;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  }
-  
-  .resep-detail-content {
-    max-width: 700px;
-    margin: 2rem auto 0;
-    font-size: 1rem;
-    line-height: 1.8;
-    color: #333;
-  }
-  
-  .resep-detail-content h2 {
-    margin-top: 2rem;
-    color: #8B4513;
-  }
-  
-  .resep-detail-content ul,
-  .resep-detail-content ol {
-    margin-left: 1.5rem;
-  }
-  .close-modal {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    border: solid 2px var(--accent);
-    color: #000;
-    font-size: 1.2rem;
-    padding: 6px 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 10000;
-  }
+  background: white;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.resep-detail-title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #8b4513;
+}
+
+.resep-detail-subtitle {
+  text-align: center;
+  font-style: italic;
+  color: #888;
+  margin-bottom: 2rem;
+}
+
+.resep-detail-image img {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.resep-detail-content {
+  max-width: 700px;
+  margin: 2rem auto 0;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.resep-detail-content h2 {
+  margin-top: 2rem;
+  color: #8b4513;
+}
+
+.resep-detail-content ul,
+.resep-detail-content ol {
+  margin-left: 1.5rem;
+}
+.close-modal {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  border: solid 2px var(--accent);
+  color: #000;
+  font-size: 1.2rem;
+  padding: 6px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10000;
+}
 /* /////////////////////////////////////////////////////////////////////////////////////////////////// */
 footer {
   background: linear-gradient(135deg, #4a2c18, #8b4513);
@@ -443,7 +441,7 @@ footer {
   font-size: 1.2rem;
 }
 
-.footer-section ul li a{
+.footer-section ul li a {
   color: var(--bg-primary);
   text-decoration: none;
   transition: color 0.3s;
@@ -453,12 +451,39 @@ footer {
   color: #ffd700;
 }
 
-
-
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   padding-top: 1rem;
   text-align: center;
   font-size: 0.9rem;
   color: #ccc;
+}
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr; /* Tumpuk semua kolom */
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .footer-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .footer-section p,
+  .footer-section ul li {
+    font-size: 0.95rem;
+  }
+
+  .footer-section ul li {
+    justify-content: center;
+  }
+
+  .footer-section ul li i {
+    margin-right: 0.4rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.85rem;
+    padding: 1rem 0 0.5rem;
+  }
 }
