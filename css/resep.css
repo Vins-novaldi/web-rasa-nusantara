@@ -181,7 +181,6 @@ header.scrolled {
 
 .tab {
   background: #f5f5dc;
-  color: #8b4513;
   padding: 12px 24px;
   border: none;
   border-radius: 25px;
@@ -193,8 +192,8 @@ header.scrolled {
 
 .tab:hover,
 .tab.active {
-  background: #d2691e;
-  color: white;
+  background: var(--accent);
+  color: var(--bg-primary);
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(210, 105, 30, 0.3);
 }
@@ -209,13 +208,14 @@ header.scrolled {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  max-width: 300px;
   border-radius: 15px;
-  background: white;
+  background: var(--bg-primary);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 .resep-card-box {
   max-width: 300px;
-  background: white;
+  background: var(--bg-primary);
   border-radius: 15px;
   overflow: hidden;
   transition: all 0.3s ease;
@@ -247,7 +247,7 @@ header.scrolled {
 .resep-content h3 {
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
-  color: #333;
+  color: #8b5e3c;
 }
 
 .resep-content p {
@@ -255,7 +255,7 @@ header.scrolled {
   margin-bottom: 1rem;
 }
 
-.resep-meta {
+.resep-sub-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -273,7 +273,7 @@ header.scrolled {
 }
 .view-resep-btn {
   background: var(--accent);
-  color: white;
+  color: var(--bg-primary);
   padding: 5px 10px;
   border: none;
   border-radius: 10px;
@@ -287,21 +287,86 @@ header.scrolled {
   background: var(--accent-hvr);
   transform: translateY(-1px);
 }
-/* /////////// */
+
+@media (max-width: 768px) {
+  .main-container {
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 15px;
+  }
+
+  .main-container h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .main-container h2::after {
+    width: 60px;
+    height: 3px;
+    bottom: -8px;
+  }
+
+  .filter-tab {
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tab {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+
+  .resep-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .resep-card-box {
+    max-width: 100%;
+  }
+
+  .resep-content {
+    padding: 1rem;
+  }
+
+  .resep-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .resep-content p {
+    font-size: 0.95rem;
+  }
+
+  .resep-sub-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .view-resep-btn {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+  }
+}
+
+/* -------------------------------------------- */
 .second-view {
   position: fixed;
   inset: 0;
   z-index: 9999;
   display: none;
 }
-/* @keyframes fadeIn {
-    from { opacity: 0; transform: scale(0.97); }
-    to { opacity: 1; transform: scale(1); }
-  } */
+
 .modal-overlay {
   position: absolute;
   inset: 0;
-  backdrop-filter: blur(8px); /* efek blur */
+  backdrop-filter: blur(8px);
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
@@ -309,11 +374,11 @@ header.scrolled {
   position: relative;
   z-index: 2;
   max-width: 900px;
-  margin: 5vh auto;
-  background: white;
+  margin: 40px auto;
+  background: var(--bg-primary);
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  padding: 2rem;
+  padding: 30px;
   animation: slideUp 0.4s ease;
   max-height: 90vh;
   overflow-y: auto;
@@ -380,9 +445,9 @@ header.scrolled {
 }
 .close-modal {
   position: absolute;
-  top: 15px;
-  right: 20px;
-  border: solid 2px var(--accent);
+  top: 20px;
+  right: 170px;
+  border: none;
   color: #000;
   font-size: 1.2rem;
   padding: 6px 10px;
@@ -390,6 +455,54 @@ header.scrolled {
   cursor: pointer;
   z-index: 10000;
 }
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 90%;
+    padding: 10px;
+    margin: 30px auto;
+    max-height: 85vh;
+  }
+
+  .resep-detail-title {
+    font-size: 1.8rem;
+  }
+
+  .resep-detail-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .resep-detail-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .resep-detail-content {
+    padding: 0 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  .resep-detail-content h2 {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+  }
+
+  .resep-detail-content ul,
+  .resep-detail-content ol {
+    margin-left: 1rem;
+    padding-left: 1rem;
+  }
+
+  .close-modal {
+    top: 15px;
+    right: 5px;
+    padding: 4px 8px;
+    font-size: 1rem;
+  }
+}
+
 /* /////////////////////////////////////////////////////////////////////////////////////////////////// */
 footer {
   background: linear-gradient(135deg, #4a2c18, #8b4513);

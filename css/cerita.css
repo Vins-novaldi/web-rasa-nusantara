@@ -307,7 +307,7 @@ text-align: start;
   .hero-section {
     height: auto;
     padding: 60px 20px;
-    background-attachment: scroll; /* agar tidak nge-lag di mobile */
+    background-attachment: scroll;
     border-radius: 0 0 20px 20px;
   }
 
