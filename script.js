@@ -24,6 +24,15 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // =======================NAVBAR=======================
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.querySelector(".nav-link");
+
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
+// ----
+
 window.addEventListener("scroll", function () {
   const header = document.querySelector("header");
   if (window.scrollY > 50) {
@@ -32,6 +41,8 @@ window.addEventListener("scroll", function () {
     header.classList.remove("scrolled");
   }
 });
+
+
 
 // ======================PARALAX EFEK================
 window.addEventListener("scroll", () => {
