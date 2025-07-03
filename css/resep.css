@@ -110,15 +110,13 @@ header.scrolled {
 }
 
 @media (max-width: 768px) {
-  header{
+  header {
     background-color: var(--bg-primary);
   }
   .menu-toggle {
     display: block;
   }
-  .logo {
-    font-size: 1.5rem;
-  }
+
   .nav-link {
     position: absolute;
     top: 100%;
@@ -139,7 +137,6 @@ header.scrolled {
   }
 
   .nav-link a {
-
     padding: 0.5rem 0;
     transition: color 0.3s ease, transform 0.3s ease;
   }
@@ -293,6 +290,9 @@ header.scrolled {
 }
 
 @media (max-width: 768px) {
+  html{
+    font-size: 80%;
+  }
   .main-container {
     margin: 1rem;
     padding: 1.5rem;
@@ -301,7 +301,7 @@ header.scrolled {
   }
 
   .main-container h2 {
-    font-size: 2rem;
+    /* font-size: 2rem; */
     margin-bottom: 2rem;
   }
 
@@ -312,22 +312,25 @@ header.scrolled {
   }
 
   .filter-tab {
+    padding: 1rem;
     gap: 0.5rem;
     margin-bottom: 2rem;
-    flex-direction: column;
+    justify-content: start;
     align-items: center;
   }
 
   .tab {
-    width: 100%;
+    padding: 5px 10px;
     max-width: 300px;
     text-align: center;
-    font-size: 0.95rem;
+    /* font-size: 0.8rem; */
   }
-
+  .main-container {
+    padding: 0rem;
+  }
   .resep-grid {
-    grid-template-columns: 1fr;
-    gap: 1.2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
   }
 
   .resep-card-box {
@@ -335,27 +338,25 @@ header.scrolled {
   }
 
   .resep-content {
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
   .resep-content h3 {
-    font-size: 1.1rem;
+    /* font-size: 0.9rem; */
   }
 
   .resep-content p {
-    font-size: 0.95rem;
+    /* font-size: 0.8rem; */
   }
 
   .resep-sub-box {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-    font-size: 0.85rem;
+    gap: 0.1rem;
+    /* font-size: 0.7rem; */
   }
 
   .view-resep-btn {
-    padding: 10px;
-    font-size: 1rem;
+    padding: 5px;
+    /* font-size: 0.7rem; */
     border-radius: 8px;
   }
 }
@@ -470,11 +471,11 @@ header.scrolled {
   }
 
   .resep-detail-title {
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
   }
 
   .resep-detail-subtitle {
-    font-size: 0.95rem;
+    /* font-size: 0.95rem; */
     margin-bottom: 1.5rem;
   }
 
@@ -486,11 +487,11 @@ header.scrolled {
 
   .resep-detail-content {
     padding: 0 0.5rem;
-    font-size: 0.95rem;
+    /* font-size: 0.95rem; */
   }
 
   .resep-detail-content h2 {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     margin-top: 1.5rem;
   }
 
@@ -504,7 +505,7 @@ header.scrolled {
     top: 15px;
     right: 5px;
     padding: 4px 8px;
-    font-size: 1rem;
+    /* font-size: 1rem; */
   }
 }
 
@@ -584,12 +585,12 @@ footer {
   }
 
   .footer-section h3 {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
   }
 
   .footer-section p,
   .footer-section ul li {
-    font-size: 0.95rem;
+    /* font-size: 0.95rem; */
   }
 
   .footer-section ul li {
@@ -597,11 +598,11 @@ footer {
   }
 
   .footer-section ul li i {
-    margin-right: 0.4rem;
+    /* margin-right: 0.4rem; */
   }
 
   .footer-bottom {
-    font-size: 0.85rem;
+    /* font-size: 0.85rem; */
     padding: 1rem 0 0.5rem;
   }
 }

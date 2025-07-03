@@ -105,7 +105,6 @@ header.scrolled .nav-link a {
   width: 100%;
 }
 
-
 .menu-toggle {
   display: none;
   font-size: 1.8rem;
@@ -114,7 +113,7 @@ header.scrolled .nav-link a {
 }
 
 @media (max-width: 768px) {
-  header{
+  header {
     background-color: var(--bg-primary);
   }
   .menu-toggle {
@@ -147,7 +146,6 @@ header.scrolled .nav-link a {
     padding: 0.5rem 0;
     transition: color 0.3s ease, transform 0.3s ease;
   }
-  
 }
 
 /* ///////////////////////////////////////////////////////////////////////////// */
@@ -194,7 +192,6 @@ header.scrolled .nav-link a {
   will-change: transform;
 }
 
-
 .hero-conten {
   position: relative;
   z-index: 3;
@@ -240,110 +237,108 @@ header.scrolled .nav-link a {
   }
 }
 
-
 /* ======================== */
 .higlight-section {
-    padding: 4rem 0;
-    background: white;
+  padding: 4rem 0;
+  background: white;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .section-title {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    color: #8B4513;
-    position: relative;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #8b4513;
+  position: relative;
 }
 
 .section-title::after {
-    content: '';
-    display: block;
-    width: 100px;
-    height: 3px;
-    background: linear-gradient(45deg, #FF6B35, #F7931E);
-    margin: 1rem auto;
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(45deg, #ff6b35, #f7931e);
+  margin: 1rem auto;
 }
 
 .higlight-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
 }
 
 .higlight-card {
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    overflow: hidden;
-    transition: all 0.3s;
-    position: relative;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s;
+  position: relative;
 }
 
 .higlight-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .card-image {
-    height: 200px;
-    position: relative;
-    overflow: hidden;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
 }
 
 .card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-
 .card-content {
-    padding: 1.5rem;
+  padding: 1.5rem;
 }
 
 .card-title {
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
-    color: #8B4513;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #8b4513;
 }
 
 .card-description {
-    color: #666;
-    line-height: 1.6;
-    margin-bottom: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
 }
 
 .card-date {
-    font-size: 0.9rem;
-    color: #999;
-    font-style: italic;
+  font-size: 0.9rem;
+  color: #999;
+  font-style: italic;
 }
 
 .read-more {
-    color: #FF6B35;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    transition: gap 0.3s;
+  color: #ff6b35;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: gap 0.3s;
 }
 
 .read-more:hover {
-    gap: 1rem;
+  gap: 1rem;
 }
 
 @media (max-width: 768px) {
   .hero {
-    height: 80vh;
+    height: 85vh;
     padding: 0 1rem;
   }
 
@@ -364,9 +359,11 @@ header.scrolled .nav-link a {
   .hero-conten {
     padding: 0 1rem;
   }
-
+  .container {
+    padding: 0 0.5rem;
+  }
   .higlight-section {
-    padding: 2rem 1rem;
+    padding: 2rem 0rem;
   }
 
   .section-title {
@@ -375,32 +372,32 @@ header.scrolled .nav-link a {
   }
 
   .higlight-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
   }
 
   .card-content {
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
   .card-title {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 
   .card-description {
-    font-size: 0.95rem;
+    font-size: 0.8rem;
   }
 
   .card-date {
-    font-size: 0.85rem;
+    font-size: 0.7rem;
   }
 
   .read-more {
-    font-size: 0.95rem;
+    font-size: 0.7rem;
   }
 
   .card-image {
-    height: 180px;
+    height: 140px;
   }
 }
 
@@ -455,7 +452,7 @@ footer {
   font-size: 1.2rem;
 }
 
-.footer-section ul li a{
+.footer-section ul li a {
   color: var(--bg-primary);
   text-decoration: none;
   transition: color 0.3s;
@@ -464,8 +461,6 @@ footer {
 .footer-section ul li a:hover {
   color: #ffd700;
 }
-
-
 
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
