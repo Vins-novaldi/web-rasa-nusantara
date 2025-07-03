@@ -122,3 +122,19 @@ if (id) {
     artikel.classList.add("active");
   }
 }
+
+// ==================FORM KIRIM CERITA===========================
+document.getElementById('cerita-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  const nama = document.getElementById('nama').value;
+  const email = document.getElementById('email').value;
+  const judul = document.getElementById('judul').value;
+  const isi = document.getElementById('isi').value;
+  
+  // Simulasi pengiriman
+  alert(`Terima kasih, ${nama}! Cerita/resep "${judul}" Anda telah diterima. Kami akan segera memproses dan menghubungi Anda melalui email ${email}.`);
+  
+  this.reset();
+});
+

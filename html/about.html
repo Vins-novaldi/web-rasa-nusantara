@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rasa Nusantara - Resep</title>
-    <link rel="stylesheet" href="../css/resep.css" />
+    <link rel="stylesheet" href="../css/about.css" />
 </head>
 <body>
     <header>
@@ -20,9 +20,81 @@
         </nav>
     </header>
 
-    <main>
-      
-    </main>
+        <main class="main-container">
+            <section class="main-header">
+                <h1 class="header-title">Cerita Rasa</h1>
+                <p class="header-subtitle">Melestarikan Warisan Kuliner Tradsional Nusantara</p>
+            </section>
+
+            <section class="section misi-section">
+                <h2>Misi Cerita Rasa</h2>
+                <div class="mission-text">
+                    <p>
+                        <span class="mission-highlight">Cerita Rasa</span> hadir sebagai platform digital yang berdedikasi untuk melestarikan kekayaan kuliner tradisional Indonesia. Kami percaya bahwa setiap hidangan tradisional menyimpan cerita, sejarah, dan nilai-nilai budaya yang tak ternilai harganya.
+                    </p>
+                    <p>
+                        Dengan semangat <span class="mission-highlight">gotong royong</span> dan <span class="mission-highlight">kebersamaan</span>, kami mengundang seluruh masyarakat Indonesia untuk berbagi resep warisan keluarga, cerita di balik hidangan favorit, dan pengalaman kuliner yang berkesan. Melalui platform ini, kami berkomitmen untuk mendokumentasikan dan menyebarkan pengetahuan kuliner tradisional agar tetap lestari untuk generasi mendatang.
+                    </p>
+                    <p>
+                        Mari bersama-sama menjaga <span class="mission-highlight">warisan kuliner Nusantara</span> agar tetap hidup dan terus berkembang di era modern ini. Setiap resep yang dibagikan adalah kontribusi berharga untuk pelestarian budaya Indonesia.
+                    </p>
+                </div>
+            </section>
+
+            <section class="section pengelola-section">
+                <h2>Pengelola Situs</h2>
+                <div class="pengelola-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face" alt="Foto Pengelola" class="pengelola-foto">
+                    <div class="pengelola-info">
+                        <h3>Budi Santoso</h3>
+                        <p><strong>Pecinta Kuliner Tradisional</strong></p>
+                        <p>Saya adalah seorang food enthusiast yang telah menggeluti dunia kuliner tradisional Indonesia selama lebih dari 15 tahun. Perjalanan saya dimulai dari kecintaan terhadap masakan nenek yang selalu menghadirkan kehangatan di setiap hidangan.</p>
+                        <p>Berlatar belakang pendidikan Antropologi Budaya, saya memahami betapa pentingnya melestarikan warisan kuliner sebagai bagian dari identitas budaya bangsa. Melalui Cerita Rasa, saya berharap dapat menghimpun dan membagikan khazanah kuliner Nusantara kepada semua orang.</p>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="section kontak-section">
+                <h2>Mari Berbagi Cerita</h2>
+                <div class="kontak-content">
+                    <p>Punya resep keluarga yang ingin dibagikan? Atau cerita menarik tentang hidangan tradisional favorit Anda? Kami sangat senang mendengar dari Anda!</p>
+                    <br>
+                    <p>Kirimkan resep, cerita, atau pertanyaan Anda ke email kami:</p>
+                    <p class="email-highlight">ceritarasa@kuliner.id</p>
+                    <br>
+                    <p>Setiap kontribusi Anda sangat berarti untuk melestarikan warisan kuliner Indonesia. Mari bersama-sama menciptakan perpustakaan digital kuliner tradisional yang kaya dan bermakna.</p>
+                </div>
+            </section>
+    
+            <section class="section form-section">
+                <h2>Kirim Cerita atau Resep</h2>
+                <div class="form-container">
+                    <form id="cerita-form">
+                        <div class="form-group">
+                            <label for="nama">Nama Lengkap</label>
+                            <input type="text" id="nama" name="nama" required placeholder="Masukkan nama lengkap Anda">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="contoh@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="judul">Judul Cerita/Resep</label>
+                            <input type="text" id="judul" name="judul" required placeholder="Contoh: Rendang Warisan Nenek atau Cerita di Balik Gudeg Jogja">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="isi">Isi Cerita atau Resep</label>
+                            <textarea id="isi" name="isi" required placeholder="Tulis cerita atau resep Anda di sini. Ceritakan latar belakang hidangan, bahan-bahan, cara memasak, atau kenangan yang terkait dengan hidangan tersebut..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Kirim Cerita Saya</button>
+                    </form>
+                </div>
+            </section>
+        </main>
 
     <footer>
         <div class="footer-container">
@@ -65,5 +137,7 @@
         </div>
     </footer>
     <script src="../script.js"></script>
+
 </body>
 </html>
+
