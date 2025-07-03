@@ -31,7 +31,7 @@ menuToggle.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
 
-// ----
+
 
 window.addEventListener("scroll", function () {
   const header = document.querySelector("header");
