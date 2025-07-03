@@ -297,6 +297,7 @@ header.scrolled {
     margin: 1rem;
     padding: 1.5rem;
     border-radius: 15px;
+    margin-top: 50px;
   }
 
   .main-container h2 {

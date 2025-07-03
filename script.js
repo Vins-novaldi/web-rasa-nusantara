@@ -12,13 +12,13 @@ function showSlides() {
   slideIndex = (slideIndex + 1) % slides.length;
   slides[slideIndex].classList.add("active");
 
-  setTimeout(showSlides, 4000); // Ulangi tiap 4 detik
+  setTimeout(showSlides, 4000);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   slides = document.querySelectorAll(".slide");
   if (slides.length > 0) {
-    slides[0].classList.add("active"); // tampilkan slide pertama
+    slides[0].classList.add("active");
     setTimeout(showSlides, 4000);
   }
 });
@@ -30,7 +30,6 @@ const navLinks = document.querySelector(".nav-link");
 menuToggle.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
-
 
 
 window.addEventListener("scroll", function () {
@@ -46,7 +45,6 @@ window.addEventListener("scroll", function () {
 });
 
 
-
 // ======================PARALAX EFEK================
 window.addEventListener("scroll", () => {
   document.querySelectorAll(".slide img").forEach((img) => {
@@ -58,24 +56,20 @@ window.addEventListener("scroll", () => {
 window.addEventListener("scroll", function () {
   const hero = document.getElementById("parallaxHero");
   const scrollY = window.scrollY;
-  hero.style.transform = `translateY(${scrollY * 0.4}px)`; // Parallax offset
+  hero.style.transform = `translateY(${scrollY * 0.4}px)`; 
 });
 
 // =======================FILTER TAB=================
-// Filter functionality
 const filterTabs = document.querySelectorAll('.tab');
 const recipeCards = document.querySelectorAll('.resep-card');
 
 filterTabs.forEach(tab => {
     tab.addEventListener('click', () => {
-        // Remove active class from all tabs
         filterTabs.forEach(t => t.classList.remove('active'));
-        // Add active class to clicked tab
         tab.classList.add('active');
 
         const category = tab.getAttribute('data-category');
 
-        // Filter recipe cards
         recipeCards.forEach(card => {
             if (category === 'all' || card.getAttribute('data-category') === category) {
                 card.style.display = 'block';
@@ -100,36 +94,30 @@ function openModal(id) {
   const modal = document.getElementById('resepModal');
   const modalContent = document.getElementById('modalContent');
 
-  // Tampilkan modal
   modal.style.display = 'block';
 
-  // Sembunyikan semua resep-detail
   modal.querySelectorAll('.resep-detail').forEach(el => {
     el.style.display = 'none';
   });
 
-  // Tampilkan resep yang dipilih
   const selected = document.getElementById(id);
   if (selected) {
     selected.style.display = 'block';
   }
 
-  // Kunci scroll latar belakang
   document.body.style.overflow = 'hidden';
 }
 
 function closeModal() {
   const modal = document.getElementById('resepModal');
   modal.style.display = 'none';
-  document.body.style.overflow = ''; // buka scroll kembali
+  document.body.style.overflow = '';
 }
 
 // ================READ MORE==============================
-// Ambil parameter dari URL
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
 
-// Tampilkan artikel sesuai id
 if (id) {
   const artikel = document.getElementById(id);
   if (artikel) {
@@ -146,7 +134,6 @@ document.getElementById('cerita-form').addEventListener('submit', function(e) {
   const judul = document.getElementById('judul').value;
   const isi = document.getElementById('isi').value;
   
-  // Simulasi pengiriman
   alert(`Terima kasih, ${nama}! Cerita/resep "${judul}" Anda telah diterima. Kami akan segera memproses dan menghubungi Anda melalui email ${email}.`);
   
   this.reset();
