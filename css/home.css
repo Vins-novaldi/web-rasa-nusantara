@@ -383,7 +383,7 @@ header.scrolled .nav-link a {
 footer {
   background: linear-gradient(135deg, #4a2c18, #8b4513);
   color: var(--bg-primary);
-  padding: 3rem 1rem 2rem;
+  padding: 2rem 1rem 2rem;
   font-family: "Segoe UI", sans-serif;
 }
 
@@ -393,10 +393,18 @@ footer {
 }
 
 .footer-content {
+  display: flex;
+  gap: 2rem;
+}
+.footer-content-2{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 2rem;
-  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.footer-section.content1{
+  max-width: 300px;
 }
 
 .footer-section h3 {
@@ -435,6 +443,10 @@ footer {
   text-decoration: none;
   transition: color 0.3s;
 }
+.footer-section ul li a i{
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
 
 .footer-section ul li a:hover {
   color: #ffd700;
@@ -447,22 +459,39 @@ footer {
   font-size: 0.9rem;
   color: #ccc;
 }
+
 @media (max-width: 768px) {
   .footer-content {
-    grid-template-columns: 1fr; /* Tumpuk semua kolom */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+  .footer-section.content1 h3{
+    font-size: 1.5rem;
+  }
+  .footer-content-2 {
+    display: flex;
+    justify-content: center;
     text-align: center;
     gap: 1.5rem;
   }
-
+  .footer-section h3 {
+    font-size: 0.9rem;
+  }
 
   .footer-section ul li {
     justify-content: center;
+    font-size: 0.8rem;
   }
 
   .footer-section ul li i {
-    margin-right: 0.4rem;
+    margin-right: 0.2rem;
   }
-
+  .footer-section ul li a i {
+    font-size: 0.8rem;
+  }
   .footer-bottom {
     padding: 1rem 0 0.5rem;
   }
