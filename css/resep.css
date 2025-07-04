@@ -301,7 +301,6 @@ header.scrolled {
   }
 
   .main-container h2 {
-    /* font-size: 2rem; */
     margin-bottom: 2rem;
   }
 
@@ -323,7 +322,6 @@ header.scrolled {
     padding: 5px 10px;
     max-width: 300px;
     text-align: center;
-    /* font-size: 0.8rem; */
   }
   .main-container {
     padding: 0rem;
@@ -341,22 +339,14 @@ header.scrolled {
     padding: 0.5rem;
   }
 
-  .resep-content h3 {
-    /* font-size: 0.9rem; */
-  }
 
-  .resep-content p {
-    /* font-size: 0.8rem; */
-  }
 
   .resep-sub-box {
     gap: 0.1rem;
-    /* font-size: 0.7rem; */
   }
 
   .view-resep-btn {
     padding: 5px;
-    /* font-size: 0.7rem; */
     border-radius: 8px;
   }
 }
