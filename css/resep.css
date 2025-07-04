@@ -6,6 +6,7 @@
 
 :root {
   --primary: #b08b64;
+  --secondary: #8b4513;
   --bg-primary: #ffffff;
   --bg-second: #f0f0f0;
   --bg-3second: #d9d9d9;
@@ -239,6 +240,11 @@ header.scrolled {
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: transform 0.3s ease;
+}
+
+.resep-image img:hover {
+  transform: scale(1.05);
 }
 
 .resep-content {
