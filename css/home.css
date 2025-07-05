@@ -496,7 +496,7 @@ header.scrolled .nav-link a {
 .unggah-resep-section {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 3rem 1rem;
+  padding: 3rem 1rem 0rem 1rem;
   text-align: center;
 }
 
@@ -508,7 +508,7 @@ header.scrolled .nav-link a {
   padding: 2rem;
   color: white;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  margin-bottom: 2rem;
+  margin-bottom: 0;
   gap: 2rem;
   align-items: center;
   justify-content: center;
@@ -586,49 +586,153 @@ header.scrolled .nav-link a {
   color: #d6285d;
 }
 
-.modal-overlay {
-  position: fixed;
-  inset: 0;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(5px);
-  z-index: 9999;
+
+
+.form-section {
+  font-size: 1.1em;
+  border-bottom: 5px solid var(--accent2);
+  padding: 2rem 0;
+  margin: 0 14rem;
+  border-radius: 0px 0px 40px 40px;
+  background-color: var(--bg-second);
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease-in-out, opacity 0.4s ease-in-out;
 }
 
-.modal-box {
-  background: #fff;
-  padding: 2rem;
-  border-radius: 15px;
-  max-width: 600px;
-  width: 90%;
-  max-height: 90vh;
-  overflow-y: auto;
-  position: relative;
-  animation: fadeInUp 0.3s ease-out;
+.form-section.active {
+  max-height: 120vh;
+  opacity: 1;
+}
+.form-container {
+  background: var(--bg-second);
+  padding: 0px 20px 20px 20px;
+  border-radius: 10px;
+  border: 2px dashed var(--accent2);
 }
 
-.close-btn {
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  font-size: 1.5rem;
+.close-btn-box {
+  width: 100%;
+  text-align: end;
+  }
+  .close-btn {
+    font-size: 1.5rem;
+    color: #555;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+  font-size: 2rem;
+  }
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #8b4513;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #d2691e;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, #8b4513 0%, #d2691e 100%);
+  color: white;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1em;
   cursor: pointer;
-  color: #444;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 20px auto 0;
+  box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139, 69, 19, 0.4);
 }
 
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid #ecf0f1;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--accent-hvr);
+  box-shadow: 0 0 0 3px rgba(230, 126, 34, 0.1);
+}
+
+.form-textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.form-submit {
+  width: 100%;
+  background: linear-gradient(135deg, #e67e22 0%, #d35400 100%);
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(230, 126, 34, 0.3);
+}
+
+.form-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(230, 126, 34, 0.4);
+}
 
 
 @media (max-width: 768px) {

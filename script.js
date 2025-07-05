@@ -129,24 +129,20 @@ document.addEventListener("DOMContentLoaded", function () {
 // ======================SECOND VIEW================
 // home
 function openFormModal() {
-  const modal = document.getElementById("unggahModal");
-  modal.style.display = "flex";
-  document.body.style.overflow = "hidden";
+  const formContainer = document.querySelector(".form-section");
+  if (formContainer) {
+    formContainer.classList.add("active");
+    formContainer.scrollIntoView({ behavior: "smooth" });
+  }
 }
 
 function closeFormModal() {
-  const modal = document.getElementById("unggahModal");
-  modal.style.display = "none";
-  document.body.style.overflow = "auto";
+  const formContainer = document.querySelector(".form-section");
+  if (formContainer) {
+    formContainer.classList.remove("active");
+  }
 }
 
-// Optional: klik luar modal untuk menutup
-window.addEventListener("click", function (e) {
-  const modal = document.getElementById("unggahModal");
-  if (e.target === modal) {
-    closeFormModal();
-  }
-});
 
 // resep
 function openModal(id) {

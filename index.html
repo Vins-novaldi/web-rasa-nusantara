@@ -258,42 +258,38 @@
             </div>
           </div>
         </div>
-
-        
-<!-- Modal Form -->
-        <div id="unggahModal" class="modal-overlay">
-          <div class="modal-box">
-            <span class="close-btn" onclick="closeFormModal()">&times;</span>
-              <h2>Kirim Cerita atau Resep</h2>
-              <div class="form-container">
-                <form id="cerita-form">
-                  <div class="form-group">
-                    <label for="nama">Nama Lengkap</label>
-                    <input type="text" id="nama" name="nama" required placeholder="Masukkan nama lengkap Anda">
-                  </div>
-
-                  <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required placeholder="contoh@email.com">
-                  </div>
-
-                  <div class="form-group">
-                    <label for="judul">Judul Cerita/Resep</label>
-                    <input type="text" id="judul" name="judul" required placeholder="Contoh: Rendang Warisan Nenek">
-                  </div>
-
-                  <div class="form-group">
-                    <label for="isi">Isi Cerita atau Resep</label>
-                    <textarea id="isi" name="isi" required placeholder="Tulis cerita atau resep Anda di sini..."></textarea>
-                  </div>
-
-                  <button type="submit" class="submit-btn">Kirim Cerita</button>
-                </form>
-              </div>
-          </div>
-        </div>
       </section>
       
+      <section class="form-section">
+        <div class="form-container">
+          <div class="close-btn-box">
+            <span class="close-btn" onclick="closeFormModal()">&times;</span>
+          </div>
+            <form id="cerita-form">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama" required placeholder="Masukkan nama lengkap Anda">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="contoh@email.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="judul">Judul Cerita/Resep</label>
+                    <input type="text" id="judul" name="judul" required placeholder="Contoh: Rendang Warisan Nenek atau Cerita di Balik Gudeg Jogja">
+                </div>
+                
+                <div class="form-group">
+                    <label for="isi">Isi Cerita atau Resep</label>
+                    <textarea id="isi" name="isi" required placeholder="Tulis cerita atau resep Anda di sini. Ceritakan latar belakang hidangan, bahan-bahan, cara memasak, atau kenangan yang terkait dengan hidangan tersebut..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Kirim Cerita</button>
+            </form>
+        </div>
+    </section>
     </main>
 
     <footer>
