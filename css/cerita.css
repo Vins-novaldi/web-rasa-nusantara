@@ -202,7 +202,7 @@ header.scrolled .nav-link a {
 }
 .artikel-grid2 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Selalu 3 kolom */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 40px;
   max-width: 1200px;
   margin-top: 20px;
@@ -340,7 +340,7 @@ header.scrolled .nav-link a {
   }
 
   .artikel-grid {
-    grid-template-columns: 1fr; /* Satu kolom di layar kecil */
+    grid-template-columns: 1fr; 
     gap: 25px;
   }
 
