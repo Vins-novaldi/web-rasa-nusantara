@@ -200,6 +200,13 @@ header.scrolled .nav-link a {
   gap: 40px;
   margin-top: 20px;
 }
+.artikel-grid2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Selalu 3 kolom */
+  gap: 40px;
+  max-width: 1200px;
+  margin-top: 20px;
+}
 
 .artikel-card {
   background: white;
